@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS Box Model 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        div.box-demo {
+            margin: 25px;
+            padding: 35px;
+            width: 200px;
+            background-color: lightseagreen;
+            border: 20px dashed indianred;
+            color: white;
+            font-weight: bold;
+        }
+
+        .explanation {
+            margin-top: 30px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .explanation h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .explanation ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thực hành: Mô hình Hộp (CSS Box Model 1)</h1>
+
+    <div class="box-demo">
+        Content demo box<br/>
+    </div>
+
+    <div class="explanation">
+        <h3>Cách tính tổng chiều rộng (Total Width):</h3>
+        <p>Tổng chiều rộng chiếm chỗ của phần tử trên trang là <strong>360px</strong>, chi tiết gồm:</p>
+        <ul>
+            <li><strong>Width (Nội dung):</strong> 200px</li>
+            <li><strong>Padding (Trái + Phải):</strong> 35px + 35px = 70px</li>
+            <li><strong>Border (Trái + Phải):</strong> 20px + 20px = 40px</li>
+            <li><strong>Margin (Trái + Phải):</strong> 25px + 25px = 50px</li>
+        </ul>
+        <p>👉 <strong>Công thức:</strong> 200 + 70 + 40 + 50 = 360px</p>
+    </div>
+
+</body>
+</html>
